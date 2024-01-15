@@ -1,0 +1,591 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    width: 95%;
+    margin: auto;
+}
+
+header {
+    background-color:#916c6c;
+    color: #fff;
+    padding: 35px 17px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+nav {
+    margin-left: 30%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 45px;
+}
+
+a {
+    color: #481d0c;
+    text-decoration: none;
+}
+
+/* Add more styling as needed for other sections */
+
+.concertDetails {
+    height: 544px;
+    width: 100%;
+}
+
+img {
+    height: 544px;
+    width: 100%;
+    /* opacity: 0.5; */
+}
+
+h1 {
+    position: relative;
+    margin-top: -37%;
+    /* margin-left: 33%; */
+    text-align: center;
+    background: -webkit-linear-gradient(#ff0000, #000000);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+.date-place {
+    position: relative;
+    color: whitesmoke;
+    margin-left: 42%;
+    font-size: larger;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#ff0000, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+.bubbly-button {
+    position: relative;
+    margin-left: 43%;
+    height: 68px;
+    width: 16%;
+    font-size: larger;
+    color: #97003d;
+    font-family: "Helvetica", "Arial", sans-serif;
+    display: inline-block;
+    /* font-size: 1em; */
+    /* padding: 1em 2em; */
+    /* margin-top: 50px; */
+    /* margin-bottom: 60px; */
+    -webkit-appearance: none;
+    appearance: none;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px #c57777;
+    margin-top: 9pc;
+  }
+
+  .bubbly-button:focus {
+    outline: 0;
+  }
+
+  .bubbly-button:before,
+  .bubbly-button:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+
+  .bubbly-button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #00fffc 20%, transparent 20%), radial-gradient(circle, transparent 20%, #00fffc 20%, transparent 30%), radial-gradient(circle, #00fffc 20%, transparent 20%), radial-gradient(circle, #00fffc 20%, transparent 20%), radial-gradient(circle, transparent 10%, #00fffc 15%, transparent 20%), radial-gradient(circle, #00fffc 20%, transparent 20%), radial-gradient(circle, #00fffc 20%, transparent 20%), radial-gradient(circle, #00fffc 20%, transparent 20%), radial-gradient(circle, #00fffc 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  }
+
+  .bubbly-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #00fffc 20%, transparent 20%), radial-gradient(circle, #00fffc 20%, transparent 20%), radial-gradient(circle, transparent 10%, #00fffc 15%, transparent 20%), radial-gradient(circle, #00fffc 20%, transparent 20%), radial-gradient(circle, #00fffc 20%, transparent 20%), radial-gradient(circle, #00fffc 20%, transparent 20%), radial-gradient(circle, #00fffc 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  }
+
+  .bubbly-button:active {
+    transform: scale(0.9);
+    background: -webkit-linear-gradient(#ff0000, #000000);
+color: whitesmoke;
+    /* background-color: #00fffc; */
+    /* box-shadow: -webkit-linear-gradient(#ff0000, #000000); */
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  }
+
+.abtevent {
+    background-color: #c57777;
+    text-align: center;
+    height: 195px;
+    padding: 4%;
+}
+.abtevent span{
+    font-size:x-large;
+    font-weight:700 ;
+}
+.abtevent p {
+    width: 53%;
+    margin: auto;
+    top: 29px;
+    position: relative;
+    font-family: serif;
+    font-size: larger;
+}
+.abtsingers {
+    background-color: #cbb9b9;
+    text-align: center;
+    height: 180px;
+    padding: 4%;
+}
+.abtsingers span {
+    font-size:x-large;
+    font-weight:700 ;
+}
+.abtsingers p {
+    width: 53%;
+    margin: auto;
+    top: 29px;
+    position: relative;
+    font-family: serif;
+    font-size: larger;
+}
+.singerlist {
+    display: flex;
+    background-color: #000000;
+    height: 300px;
+}
+
+.singer1Details, .singer2Details, .singer3Details {
+    height: 250px;
+    /* background-color: #481d0c; */
+    position: relative;
+    width: 20%;
+    margin-left: 17%;
+    margin: auto;
+    padding: 3%;
+    
+}
+
+.singer1Pic, .singer2Pic, .singer3Pic {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: 19%;
+    margin-top: 3%;
+}
+.singer1Details span {
+    font-size: large;
+    margin-left: 25%;
+    font-weight: 800;
+    background: linear-gradient(
+        to right, rgb(0, 168, 253), #ffff 35%, #e00a95);
+    -webkit-background-clip : text;
+    -webkit-text-fill-color: transparent;
+}
+
+.singer2Details span{
+    font-size: large;
+    margin-left: 18%;
+    font-weight: 800;  
+    background: linear-gradient(
+        to right, rgb(0, 168, 253), #ffff 35%, #e00a95);
+    -webkit-background-clip : text;
+    -webkit-text-fill-color: transparent;
+}
+.singer3Details span {
+    font-size: large;
+    margin-left: 9%;
+    font-weight: 800;
+    background: linear-gradient(
+        to right, rgb(0, 168, 253), #ffff 35%, #e00a95);
+    -webkit-background-clip : text;
+    -webkit-text-fill-color: transparent;
+}
+
+.singer1Details i {
+    font-size: small;
+    margin-left: 6%;
+    color: whitesmoke;
+}
+.singer2Details i{
+    font-size: small;
+    margin-left: 21%;
+    color: whitesmoke;
+}
+.singer3Details i{
+    font-size: small;
+    margin-left: 6%;
+    color: whitesmoke;
+}
+
+.abtPartners {
+    background-color: #c57777;
+    text-align: center;
+    height: 95px;
+    padding: 2%;
+}
+
+.abtPartners span {
+    font-size:x-large;
+    font-weight:700 ;
+}
+
+.abtPartners p {
+    width: 35%;
+    margin: auto;
+    top: 29px;
+    position: relative;
+    font-family: serif;
+    font-size: larger;
+}
+
+.partnersIcon {
+    background-color: #c57777;
+    /* background-color: #0f0f0f; */
+    height: 105px;
+    text-align: center;
+    /* padding: 4%; */
+}
+.icon1 {
+    height: 58px;
+    width: 6%;
+}
+.icon2 {
+    height: 58px;
+    width: 6%;
+}
+.icon3 {
+    height: 58px;
+    width: 6%;
+}
+
+.mapimg {
+    height: 203px;
+    opacity: 0.3;
+}
+
+.locationConcert span {
+    font-size:x-large;
+    font-weight:700 ;
+    position: relative;
+    top: -159px;
+    left: 45%;
+    color: rgb(0, 0, 0);
+}
+
+.locationConcert p {
+    width: 23%;
+    margin: auto;
+    top: -135px ;
+    position: relative;
+    font-family: serif;
+    font-size: small;
+    color: #ab2323;
+    text-align: center;
+}
+
+footer {
+    background-color: #0f0f0f;
+    height: 40px;
+    margin-top: -8%;
+}
+
+   /* Media Query for Mobile Devices */
+   @media (max-width: 480px) {
+    nav {
+        margin-left: 10%;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+    h1 {
+        margin-top: -119%;
+        /* margin-left: 8%; */
+        font-size: x-large;
+    }
+    .date-place {
+        margin-left: 25%;
+    }
+    .bubbly-button {
+    margin-left: 37%;
+    height: 54px;
+    width: 33%;
+    font-size: small
+    }
+    .abtevent span, .abtsingers span{
+        font-size:larger;
+    }
+    .abtevent p,.abtsingers p {
+        width: 81%;
+        font-size: medium;
+    }
+    .singer1Pic, .singer2Pic, .singer3Pic {
+        height: 100px;
+        width: 100px;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    .singer1Details {
+        margin-left: 1%;  
+    }
+    .singer1Details span {
+        font-size: small;
+        margin-left: -35%;
+        /* margin: auto; */
+        /* text-align: center; */
+        position: relative;
+        left: 34%;
+    }
+    .singer1Details i {
+        font-size: x-small;
+        position: relative;
+        top: 10px;
+        margin-left: -5%;
+        left: 20%;
+    }
+    .singer2Details span{
+        font-size: small;
+        margin-left: -19%;
+        /* margin: auto; */
+        /* text-align: center; */
+        position: relative;
+        left: 25%;
+    }
+    .singer2Details i{
+        font-size: x-small;
+        position: relative;
+        top: 10px;
+        margin-left: -5%;
+        left: 17%;
+    }
+    .singer3Details span {
+        font-size: small;
+    margin-left: 16%;
+    /* margin: auto; */
+    /* text-align: center; */
+    position: relative;
+    left: -2%;
+    }
+    .singer3Details i{
+        font-size: x-small;
+        position: relative;
+        top: 10px;
+        margin-left: -5%;
+        left: 17%;
+    }
+    .abtPartners span {
+        font-size:larger;
+    }
+    .abtPartners p {
+        width: 81%;
+        font-size: medium;
+    }
+    .partnersIcon {
+        height: 47px;
+        padding: 4%;
+    }
+    .icon1, .icon2, .icon3{
+        height: 38px;
+        width: 15%;
+    }
+    .locationConcert span {
+        font-size:larger;
+        left: 41%;
+    }
+    .locationConcert p {
+        width: 64%;
+    }
+
+   }
+   @media (min-width: 481px) and (max-width: 767px) {
+    nav {
+        margin-left: 14%;
+    }
+    h1 {
+        margin-top: -77%;
+    } 
+    .date-place {
+        margin-left: 31%;
+    }
+    .bubbly-button {
+        position: relative;
+        margin-left: 36%;
+        height: 68px;
+        width: 31%;
+    }
+    .abtevent p, .abtsingers p, .abtPartners p {
+        width: 70%
+    }
+    .singer1Pic, .singer2Pic, .singer3Pic {
+        margin-left: -10%;
+    }
+
+    .singer1Details span {
+        margin-left: -10%
+    }
+    .singer1Details i {
+        position: relative;
+        top: 10px;
+        margin-left: -5%;
+        left: 9%;
+    }
+    .singer2Details span{
+        margin-left: -19%;
+        position: relative;
+        left: 25%;
+    }
+    .singer2Details i{
+        position: relative;
+        top: 10px;
+        margin-left: -5%;
+        left: 17%;
+    }
+    .singer3Details span {
+    margin-left: 16%;
+    position: relative;
+    left: -2%;
+    }
+    .singer3Details i{
+        position: relative;
+        top: 10px;
+        margin-left: -5%;
+        left: 17%;
+    }
+    .singerlist {
+        height: 360px;
+    }
+    .icon1, .icon2, .icon3{
+        height: 52px;
+        width: 13%;
+    }
+    .locationConcert span {
+        left: 38%;
+    }
+    .locationConcert p {
+        width: 54%;
+    }
+   }
+   @media (min-width: 768px) and (max-width: 1024px){
+    h1 {
+        margin-top: -55%;
+    }
+    .date-place {
+        margin-left: 36%;
+    }
+    .abtPartners p {
+        width: 48%;
+    }
+    .singerlist {
+        height: 360px;
+    }
+    .singer1Details span {
+        margin-left: 21%
+    }
+    .singer1Details i {
+        position: relative;
+        top: 10px;
+        margin-left: -34%;
+        left: 27%;
+    }
+    .singer2Details span{
+        margin-left: -19%;
+        position: relative;
+        left: 25%;
+    }
+    .singer2Details i{
+        position: relative;
+        top: 10px;
+        margin-left: -5%;
+        left: 17%;
+    }
+    .singer3Details span {
+        margin-left: -34%;
+    position: relative;
+    left: 25%;
+    }
+    .singer3Details i{
+            position: relative;
+            top: 10px;
+            margin-left: -37%;
+    left: 27%;
+    }
+
+    .locationConcert p {
+        width: 39%;
+    }
+    .partnersIcon {
+        height: 77px;
+        padding: 4%;
+        margin-top: -1%
+    }
+    .icon1, .icon2, .icon3{
+        height: 65px;
+        width: 11%;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+    h1 {
+        margin-top: -45%
+    }
+    .singer1Details i {
+        position: relative;
+        top: 10px;
+        margin-left: -9%;
+        left: 9%;
+    }
+    .singer2Details i{
+        position: relative;
+        top: 10px;
+    }
+    .singer3Details span {
+        margin-left: -6%;
+        position: relative;
+        left: 14%;
+        }
+    .singer3Details i{
+        position: relative;
+        top: 10px;
+        margin-left: -10%;
+        left: 17%;
+    }
+    .partnersIcon {
+        height: 77px;
+        padding: 4%;
+        margin-top: -1%
+    }
+    .icon1, .icon2, .icon3{
+        height: 69px;
+        width: 11%;
+    }
+    .locationConcert p {
+        width: 33%;
+    }
+}
+@media (min-width: 1281px) {
+    .partnersIcon {
+        height: 77px;
+        padding: 4%;
+        margin-top: -1%
+    }
+}
